@@ -40,3 +40,5 @@ for contact in all_contacts
     puts "#{contact.first_name} #{contact.last_name} - #{contact.email}"
 end
 
+
+
