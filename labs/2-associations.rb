@@ -24,3 +24,19 @@
 #
 # Tesla, Inc.
 # Elon Musk - elon@tesla.com
+
+companies = Company.all
+for company in companies
+    puts company.name
+    for contact in company.contacts
+      puts "#{contact.first_name} #{contact.last_name} - #{contact.email}"
+    end
+end
+
+
+puts "There are #{Contact.all.count} contacts."
+all_contacts = Contact.all
+for contact in all_contacts
+    puts "#{contact.first_name} #{contact.last_name} - #{contact.email}"
+end
+

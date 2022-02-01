@@ -15,9 +15,9 @@ Contact.destroy_all
 apple = Company.where({name: "Apple, Inc."}) [0]
 puts apple.id 
 
-values = { first_name: "Craig"
-            last_name: "Federighi"
-            email: "craig@apple.com"
+values = { first_name: "Craig",
+            last_name: "Federighi",
+            email: "craig@apple.com",
             phone_number: "888-555-1212",
             company_id: apple.id }
 contact = Contact.new (values)
@@ -27,26 +27,26 @@ amazon = Company.where({ name: "Amazon.com, Inc."})
 amazon_id = amazon.id
 
 contact = Contact.new
-contact.first_name = "Andy"
-contact.last_name = "Jassy"
-contact.email = "Andy@amazon.com"
-contact.phone_number = "888-555-1313"
+contact.first_name = "Andy",
+contact.last_name = "Jassy",
+contact.email = "Andy@amazon.com",
+contact.phone_number = "888-555-1313",
 contact.company_id = amazon_id
 contact.save
 
 contact = Contact.new
-contact.first_name = "Tim"
-contact.last_name = "Cook"
-contact.email = "tim@apple.com"
-contact.phone_number = "888-555-1000"
+contact.first_name = "Tim",
+contact.last_name = "Cook",
+contact.email = "tim@apple.com",
+contact.phone_number = "888-555-1000",
 contact.company_id = apple_id
 contact.save
 
 contact = Contact.new
-contact.first_name = "Elon"
-contact.last_name = "Musk"
-contact.email = "Elon@tesla.com"
-contact.phone_number = "888-555-1070"
+contact.first_name = "Elon",
+contact.last_name = "Musk",
+contact.email = "Elon@tesla.com",
+contact.phone_number = "888-555-1070",
 contact.company_id = tesla_id
 contact.save
 
